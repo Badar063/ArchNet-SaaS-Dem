@@ -1,9 +1,8 @@
 # Save this as requirements.txt in your MAIN project folder (same as app.py)
-streamlit==1.28.0
-supabase==2.3.1
-stripe==7.8.0
-requests==2.31.0
-pandas==2.1.4
-plotly==5.18.0
-python-dotenv==1.0.0
-httpx==0.25.2
+streamlit
+supabase
+requests
+pandas
+plotly
+python-dotenv
+httpx
