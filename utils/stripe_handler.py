@@ -27,8 +27,8 @@ class StripeHandler:
                     'quantity': 1,
                 }],
                 mode='payment',
-                success_url='https://your-app.streamlit.app/?session_id={CHECKOUT_SESSION_ID}',
-                cancel_url='https://your-app.streamlit.app/?cancelled=true',
+                success_url='https://archnet-demo.streamlit.app//?session_id={CHECKOUT_SESSION_ID}',
+                cancel_url='https://archnet-demo.streamlit.app//?cancelled=true',
                 metadata={
                     'user_email': user_email,
                     'credits': credits
