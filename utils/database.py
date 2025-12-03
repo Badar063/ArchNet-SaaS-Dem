@@ -5,8 +5,8 @@ import json
 
 class Database:
     def __init__(self):
-        self.url = st.secrets["https://usjzyeqyongwwgpbglkf.supabase.co"]
-        self.key = st.secrets["eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVzanp5ZXF5b25nd3dncGJnbGtmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjQ3MDk4NDUsImV4cCI6MjA4MDI4NTg0NX0.bhDWAk3P95d6fBY1KGSslkyLWrIS3v9r4ppvLBE03oo"]
+        self.url = st.secrets["supabase_url"]
+        self.key = st.secrets["supabase_key"]
         self.client: Client = create_client(self.url, self.key)
     
     def get_user(self, email: str):
