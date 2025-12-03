@@ -1,0 +1,18 @@
+{
+  "pneumonia": {
+    "models": [
+      {"name": "VGG16", "accuracy": 0.92, "speed": 45, "size": 528, "cost": "high"},
+      {"name": "ResNet50", "accuracy": 0.94, "speed": 32, "size": 98, "cost": "medium"},
+      {"name": "EfficientNetB0", "accuracy": 0.91, "speed": 18, "size": 29, "cost": "low"}
+    ],
+    "recommendation": "For pneumonia detection, EfficientNetB0 offers the best balance of speed (18ms) and accuracy (91%) for clinical deployment."
+  },
+  "skin_cancer": {
+    "models": [
+      {"name": "DenseNet121", "accuracy": 0.87, "speed": 52, "size": 32, "cost": "medium"},
+      {"name": "NASNetMobile", "accuracy": 0.85, "speed": 28, "size": 23, "cost": "low"},
+      {"name": "ResNet50", "accuracy": 0.89, "speed": 65, "size": 98, "cost": "high"}
+    ],
+    "recommendation": "For skin cancer analysis, DenseNet121 provides 87% accuracy with reasonable speed, ideal for dermatology apps."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "functions": {
+    "worker.py": {
+      "runtime": "python3.9"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/worker",
+      "destination": "/background/worker.py"
+    }
+  ]
+}
