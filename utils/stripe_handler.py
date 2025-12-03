@@ -3,7 +3,7 @@ import stripe
 
 class StripeHandler:
     def __init__(self):
-        stripe.api_key = st.secrets["sk_test_51Sa2bPKaslykU7Lo2cQ0FUFVIjC5ca08pER53uAYMuDfPxIjG3VMNShp0Zy1CBDNhJBZazEDVqxNRhyk5fRIGPEk001G5eqltZ"]
+        stripe.api_key = st.secrets["stripe_secret_key"]
     
     def create_checkout_session(self, user_email: str, credits: int, price: int):
         """
